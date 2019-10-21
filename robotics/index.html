@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="no-skrollr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Get an idea of how technology works in the world and how you can make it."/>
+	<meta name="keywords" content="Imfundo; Mechanics; Robotics; Education; Delhi; Event; Electronics; Programming;
+									Young; Events; Bootcamp; Workshop; Kids; Students;"/>
+	
+	<title>Maker's Bootcamp</title>
+	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/w3.css" />
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-sectionsnap.js" type="text/javascript"></script>
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/Chalkduster_400.font.js" type="text/javascript"></script>
+	<script src="js/Flashback_version_3_400.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		if (screen.width <= 850){
+			window.location = "https://robotics.imfundo.io/m";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="sections-wrapper">
+		<div class="section s1">
+			
+		</div>
+		<div class="section s2">
+			
+		</div>
+		<div class="section s3">
+			<img id="slider1" class="mySlides w3-animate-right" src="img/1.jpg">
+			<img id="slider2" class="mySlides w3-animate-right" src="img/2.jpg">
+			<img id="slider3" class="mySlides w3-animate-right" src="img/3.jpg">
+			<img id="slider4" class="mySlides w3-animate-right" src="img/4.jpg">
+			<img id="slider5" class="mySlides w3-animate-right" src="img/5.jpg">
+			<p class="gallery_header">
+				Previous Bootcamps
+			</p>
+		</div>
+		<div class="section s4">
+			<img class="testimonial_img" src="img/testimonial_bg.jpg" alt=""/>
+			<p class="testimonial_header">
+				Feedback of Participants
+			</p>
+			<p class="testimonial_para">
+				"Amazing. Got a break from the usual study routine. I found it interesting."<br>
+				-Anmol, Class X, DPS Bhopal<br><br>
+				"It helped us to learn the basic concepts of gears and electronics which are very important for a science student."<br>
+				-Ayushman, Class X, DPS Bokaro<br><br>
+				"I got to know how self-driving cars work."<br>
+				-Rohan, Class X, DPS Vasant Kunj<br><br>
+				"I particularly liked the fact that we, the students, could construct too."<br>
+				-Aakash, Class X, DPS-MIS Doha<br><br>
+				"It increased my interest in mechanical engineering."<br>
+				-Ayush, Class X, DPS ELDECO Lucknow<br><br>
+				"I could recollect the instances of my childhood when I opened my toys."<br>
+				-Saurav, Class X, DPS Bokaro
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$(".section").css("min-height", $(window).height() + "px");
+			$(".section").css("max-height", $(window).height() + "px");
+			$(".sections-wrapper").sectionsnap({
+				delay : 100
+				, selector : '.section'
+				, reference : 1
+				, animationTime : 400
+			});
+			
+			var myIndex = 0;
+			carousel();
+			
+			function carousel(){
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++){
+					x[i].style.display = "none";
+				}
+				myIndex++;
+				if (myIndex > x.length)
+				{
+					myIndex = 1
+				}
+				x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 2500);
+			}
+			
+			Cufon.replace(".testimonial_header", {fontFamily: "Chalkduster"});
+			Cufon.replace(".gallery_header", {fontFamily: "Chalkduster"});
+			
+			/**********************************************************************************************************************
+			******************************************DETERMINE VIEWPORT WIDTH AND HEIGHT******************************************
+			**********************************************************************************************************************/
+			var viewportwidth;
+			var viewportheight;
+			
+			// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+			if (typeof window.innerWidth != 'undefined'){
+				viewportwidth = window.innerWidth,
+				viewportheight = window.innerHeight
+			}
+			// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+			else if (typeof document.documentElement != 'undefined'
+					&& typeof document.documentElement.clientWidth !=
+					'undefined' && document.documentElement.clientWidth != 0){
+				viewportwidth = document.documentElement.clientWidth,
+				viewportheight = document.documentElement.clientHeight
+			}
+			// older versions of IE
+			else{
+				viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+				viewportheight = document.getElementsByTagName('body')[0].clientHeight
+			}
+			/**********************************************************************************************************************
+			******************************************DETERMINE VIEWPORT WIDTH AND HEIGHT******************************************
+			**********************************************************************************************************************/
+			
+			if(viewportheight>viewportwidth){
+				$(".testimonial_img").css("height", "100vh");
+				$(".testimonial_img").css("width", "auto");
+				document.getElementById('slider1').style.height	= "100vh";
+				document.getElementById('slider1').style.width	= "auto";
+				document.getElementById('slider2').style.height	= "100vh";
+				document.getElementById('slider2').style.width	= "auto";
+				document.getElementById('slider3').style.height	= "100vh";
+				document.getElementById('slider3').style.width	= "auto";
+				document.getElementById('slider4').style.height	= "100vh";
+				document.getElementById('slider4').style.width	= "auto";
+				document.getElementById('slider5').style.height	= "100vh";
+				document.getElementById('slider5').style.width	= "auto";
+			}
+			else{
+				$(".testimonial_img").css("height", "auto");
+				$(".testimonial_img").css("width", "100vw");
+				document.getElementById('slider1').style.height	= "auto";
+				document.getElementById('slider1').style.width	= "100vw";
+				document.getElementById('slider2').style.height	= "auto";
+				document.getElementById('slider2').style.width	= "100vw";
+				document.getElementById('slider3').style.height	= "auto";
+				document.getElementById('slider3').style.width	= "100vw";
+				document.getElementById('slider4').style.height	= "auto";
+				document.getElementById('slider4').style.width	= "100vw";
+				document.getElementById('slider5').style.height	= "auto";
+				document.getElementById('slider5').style.width	= "100vw";
+			}
+			
+			var slider	= document.getElementsByClassName("mySlides");
+			for (i = 0; i < slider.length; i++){
+				if(slider[0].width>0){
+					slider[i].style.marginLeft	= ((viewportwidth-slider[0].width)/2)+'px';
+				}
+			}
+			
+			var testimonial	= document.getElementsByClassName("testimonial_img");
+			if(testimonial[0].height>0){
+				testimonial[0].style.marginTop	= ((viewportheight-testimonial[0].height)/1.5)+'px';
+			}
+			
+		});
+	</script>
+</body>
+
+</html>

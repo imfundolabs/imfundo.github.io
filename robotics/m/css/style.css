@@ -1,0 +1,180 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+.section {
+	min-height:				300px;
+	font-size:				100%;
+}
+
+.s1 {
+	position:				relative;
+	background:				#000033;
+	width:					100vw;
+	height:					100vh;
+	text-align:				center;
+	background-image:		url(../img/sec1_img1.png);
+    background-repeat:		no-repeat;
+    background-position:	center;
+	background-size:		contain;
+}
+.s2 {
+	position:				relative;
+	background:				#FF6666;
+	width:					100vw;
+	height:					100vh;
+	text-align:				center;
+}
+.s4 {
+	position:				relative;
+	background:				#000;
+	width:					100vw;
+	height:					100vh;
+	text-align:				center;
+	overflow:				hidden;
+	/*background-image:		url(../img/testimonial_bg.jpg);
+    background-repeat:		no-repeat;
+    background-position:	center;
+    background-size:		100% auto;*/
+	font-size:				100%;
+}
+.s5 {
+	position:				relative;
+	background:				#FBB040;
+	width:					100vw;
+	height:					100vh;
+	text-align:				center;
+	background-image:		url(../img/sec5_bg.png);
+    background-repeat:		no-repeat;
+    background-position:	center;
+    background-size:		contain;
+}
+.s6 {
+	position:				relative;
+	background:				#FBB040;
+	width:					100vw;
+	height:					100vh;
+	top:					-15px;
+	text-align:				center;
+}
+.testimonial_img{
+	z-index:				-10;
+}
+.testimonial_header{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	/*font-size:				1.5rem;
+	top:					-1.0vmin;
+	left:					3.0vmin;*/
+	font-size:				4.0vw;
+	top:					1.0vw;
+	line-height:			1.2rem;
+	left:					50%;
+    margin-right:			-45%;
+	transform:				translate(-50%,0%);
+}
+.testimonial_para{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				right;
+	font-family:			Verdana, Geneva, sans-serif;
+	/*font-size:				2.5vmin;
+	line-height:			4.0vmin;
+	top:					30.0vmin;
+	margin-left:			20%;
+	margin-right:			10%;*/
+	font-size:				2.0vw;
+	line-height:			1.2rem;
+	top:					50%;
+	left:					50%;
+    margin-right:			-30%;
+	transform:				translate(-50%,-40%);
+}
+.sec2_header{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-size:				4.0vw;
+	top:					1.0vw;
+	line-height:			1.2rem;
+	left:					50%;
+    margin-right:			-45%;
+	transform:				translate(-50%,0%);
+	
+}
+.sec2_para{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-size:				2.0vw;
+	line-height:			1.2rem;
+	top:					50%;
+	left:					50%;
+    margin-right:			-50%;
+	transform:				translate(-50%,-40%);
+}
+.lnk1_img{
+	position:				absolute;
+	width:					33.76%;
+	top:					73.60%;
+	left:					12.36%;
+}
+.lnk2_img{
+	position:				absolute;
+	width:					33.76%;
+	top:					73.60%;
+	left:					53.79%;
+}
+.sec6_header{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-size:				8.0vw;
+	top:					1.0vw;
+	line-height:			1.2rem;
+	left:					50%;
+    margin-right:			-45%;
+	transform:				translate(-50%,0%);
+}
+.sec6_camp1{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-family:			Verdana, Geneva, sans-serif;
+	font-size:				4.0vw;
+	line-height:			1.5rem;
+	top:					25%;
+	left:					50%;
+    margin-right:			-50%;
+	transform:				translate(-50%,0%);
+}
+.lnk3_img{
+	position:				absolute;
+	width:					60%;
+	top:					50%;
+	left:					50%;
+    margin-right:			-50%;
+	transform:				translate(-50%,0%);
+}
+.sec6_camp2{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-family:			Verdana, Geneva, sans-serif;
+	font-size:				4.0vw;
+	line-height:			1.5rem;
+	top:					60%;
+	left:					50%;
+    margin-right:			-50%;
+	transform:				translate(-50%,0%);
+}
+.lnk4_img{
+	position:				absolute;
+	width:					60%;
+	top:					85%;
+	left:					50%;
+    margin-right:			-50%;
+	transform:				translate(-50%,0%);
+}

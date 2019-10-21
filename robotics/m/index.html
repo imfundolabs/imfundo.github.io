@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="no-skrollr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Get an idea of how technology works in the world and how you can make it."/>
+	<meta name="keywords" content="Imfundo; Mechanics; Robotics; Education; Delhi; Event; Electronics; Programming;
+									Young; Events; Bootcamp; Workshop; Kids; Students;"/>
+	
+	<title>Maker's Bootcamp</title>
+	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/w3.css" />
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/jquery-sectionsnap.js" type="text/javascript"></script>
+	<script src="js/cufon-yui.js" type="text/javascript"></script>
+	<script src="js/Chalkduster_400.font.js" type="text/javascript"></script>
+	<script src="js/Flashback_version_3_400.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		if (screen.width > 850){
+			window.location = "https://robotics.imfundo.io";
+		}
+	</script>
+</head>
+
+<body>
+	<div class="sections-wrapper">
+		<div class="section s1">
+			
+		</div>
+		<div class="section s2">
+			<p class="sec2_header">
+				ACTIVITIES COVERED IN THE BOOTCAMP
+			</p>
+			<p class="sec2_para">
+				How Simple A Machine Can Be?<br>
+				Machine To Lift The Earth<br>
+				Rotating Machines<br>
+				Grinding Gears<br>
+				Learning Gear Ratio<br>
+				Making A Simple Gear Machine<br>
+				CAM: Circular To Linear Motion<br>
+				Controlling A Fan And A Lamp<br>
+				Constructing A Small Fan Regulator<br>
+				Building Your Own Household Circuit<br>
+				Switching Your Microcontroller Board<br>
+				Creating A Door Bell Using Arduino<br>
+				Creating Bell Patterns<br>
+				Controlling A Motor<br>
+				BOXY: Constructing And Controlling A Robot<br>
+				Using Sensors For Intelligent Systems
+			</p>
+		</div>
+		<div class="section s4">
+			<img class="testimonial_img" src="img/testimonial_bg.jpg" alt=""/>
+			<p class="testimonial_header">
+				Feedback of Previous Participants
+			</p>
+			<p class="testimonial_para">
+				"Amazing. Got a break from the usual study routine. I found it interesting."<br>
+				-Anmol, Class X, DPS Bhopal<br><br>
+				"It helped us to learn the basic concepts of gears and electronics which are very important for a science student."<br>
+				-Ayushman, Class X, DPS Bokaro<br><br>
+				"I got to know how self-driving cars work."<br>
+				-Rohan, Class X, DPS Vasant Kunj<br><br>
+				"I particularly liked the fact that we, the students, could construct too."<br>
+				-Aakash, Class X, DPS-MIS Doha<br><br>
+				"It increased my interest in mechanical engineering."<br>
+				-Ayush, Class X, DPS ELDECO Lucknow<br><br>
+				"I could recollect the instances of my childhood when I opened my toys."<br>
+				-Saurav, Class X, DPS Bokaro
+			</p>
+		</div>
+		<div class="section s5">
+			<a href="https://www.instamojo.com/akshat_bhattacharjee/makers-bootcamp/" target="_blank">
+				<img class="lnk1_img" src="img/reg_link1.png" alt="Registeration link for Gurgaon Camp @ instamojo"/>
+			</a>
+			<a href="https://www.instamojo.com/akshat_bhattacharjee/makers-bootcamp-ea24d/" target="_blank">
+				<img class="lnk2_img" src="img/reg_link2.png" alt="Registeration link for Rohini Camp @ instamojo"/>
+			</a>
+		</div>
+		<div class="section s6">
+			<p class="sec6_header">
+				UPCOMING MAKER'S BOOTCAMPS
+			</p>
+			<p class="sec6_camp1">
+				13th June - 18th June<br>
+				J-5/19, DLF Phase II, Gurgaon<br>
+				11:30 AM - 1:30 PM<br>
+				For 7th - 10th class
+			</p>
+			<a href="https://www.instamojo.com/akshat_bhattacharjee/makers-bootcamp/" target="_blank">
+				<img class="lnk3_img" src="img/reg_link1.png" alt="Registeration link for Gurgaon Camp @ instamojo"/>
+			</a>
+			<p class="sec6_camp2">
+				22nd June - 24th June<br>
+				Varun Apartments, Sector-9, Rohini<br>
+				9:30 AM - 1:30 PM<br>
+				For 7th - 10th class
+			</p>
+			<a href="https://www.instamojo.com/akshat_bhattacharjee/makers-bootcamp-ea24d/" target="_blank">
+				<img class="lnk4_img" src="img/reg_link2.png" alt="Registeration link for Rohini Camp @ instamojo"/>
+			</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$(".section").css("min-height", $(window).height() + "px");
+			$(".section").css("max-height", $(window).height() + "px");
+			
+			Cufon.replace(".testimonial_header", {fontFamily: "Chalkduster"});
+			Cufon.replace(".sec2_header", {fontFamily: "Chalkduster"});
+			Cufon.replace(".sec2_para", {fontFamily: "Chalkduster"});
+			Cufon.replace(".sec6_header", {fontFamily: "Chalkduster"});
+			
+			/**********************************************************************************************************************
+			******************************************DETERMINE VIEWPORT WIDTH AND HEIGHT******************************************
+			**********************************************************************************************************************/
+			var viewportwidth;
+			var viewportheight;
+			
+			// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+			if (typeof window.innerWidth != 'undefined'){
+				viewportwidth = window.innerWidth,
+				viewportheight = window.innerHeight
+			}
+			// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+			else if (typeof document.documentElement != 'undefined'
+					&& typeof document.documentElement.clientWidth !=
+					'undefined' && document.documentElement.clientWidth != 0){
+				viewportwidth = document.documentElement.clientWidth,
+				viewportheight = document.documentElement.clientHeight
+			}
+			// older versions of IE
+			else{
+				viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+				viewportheight = document.getElementsByTagName('body')[0].clientHeight
+			}
+			/**********************************************************************************************************************
+			******************************************DETERMINE VIEWPORT WIDTH AND HEIGHT******************************************
+			**********************************************************************************************************************/
+			
+			if(viewportheight>viewportwidth){
+				$(".testimonial_img").css("height", "100vh");
+				$(".testimonial_img").css("width", "auto");
+			}
+			else{
+				$(".testimonial_img").css("height", "auto");
+				$(".testimonial_img").css("width", "100vw");
+			}
+			
+			if(viewportwidth<500){
+				$(".sec2_para").css("fontSize", "3.0vw");
+				$(".sec2_header").css("fontSize", "6.0vw");
+				$(".testimonial_para").css("fontSize", "3.0vw");
+				$(".testimonial_header").css("fontSize", "5.5vw");
+			}
+			else{
+				$(".sec2_para").css("fontSize", "2.0vw");
+				$(".sec2_header").css("fontSize", "4.5vw");
+				$(".testimonial_para").css("fontSize", "2.0vw");
+				$(".testimonial_header").css("fontSize", "4.5vw");
+			}
+			
+			var testimonial	= document.getElementsByClassName("testimonial_img");
+			if(testimonial[0].height>0){
+				testimonial[0].style.marginTop	= ((viewportheight-testimonial[0].height)/1.5)+'px';
+			}
+			
+			if(viewportheight>viewportwidth){
+				$(".s5").remove();
+			}
+			else{
+				$(".s6").remove();
+			}
+			
+		});
+	</script>
+</body>
+
+</html>

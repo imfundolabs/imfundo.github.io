@@ -1,0 +1,114 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+.section {
+	min-height:				300px;
+	font-size:				100%;
+}
+
+.s1 {
+	position:				relative;
+	background:				#000033;
+	width:					100vw;
+	height:					100vh;
+	z-index:    			-100;
+	text-align:				center;
+	background-image:		url(../img/sec1_img2.png);
+    background-repeat:		no-repeat;
+    background-position:	center;
+	background-size:		contain;
+}
+.s2 {
+	position:				relative;
+	background:				#FF6666;
+	width:					100vw;
+	height:					100vh;
+	z-index:    			-100;
+	text-align:				center;
+	background-image:		url(../img/sec2_bg.png);
+    background-repeat:		no-repeat;
+    background-position:	center;
+    background-size:		contain;
+}
+.s3 {
+	position:				relative;
+	background:				#000;
+	width:					100vw;
+	height:					100vh;
+	z-index:    			-100;
+	text-align:				center;
+}
+.s4 {
+	position:				relative;
+	background:				#000;
+	width:					100vw;
+	height:					100vh;
+	z-index:    			-100;
+	text-align:				center;
+	overflow:				hidden;
+	/*background-image:		url(../img/testimonial_bg.jpg);
+    background-repeat:		no-repeat;
+    background-position:	center;
+    background-size:		100% auto;*/
+	font-size:				100%;
+}
+.s5 {
+	position:				relative;
+	background:				#FBB040;
+	width:					100vw;
+	height:					100vh;
+	text-align:				center;
+	background-image:		url(../img/sec5_bg.png);
+    background-repeat:		no-repeat;
+    background-position:	center;
+    background-size:		contain;
+}
+.myslides{
+	display:				none;
+	margin:					auto;
+}
+.gallery_header{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-size:				2.0rem;
+	top:					-1.0vmin;
+	left:					3.0vmin;
+}
+.testimonial_img{
+	z-index:				-10;
+}
+.testimonial_header{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				center;
+	font-size:				2.0rem;
+	top:					-1.0vmin;
+	left:					3.0vmin;
+}
+.testimonial_para{
+	position:				absolute;
+	color:					#FFF;
+	text-align:				right;
+	font-family:			Verdana, Geneva, sans-serif;
+	font-size:				2.5vmin;
+	line-height:			4.0vmin;
+	top:					20.0vmin;
+	margin-left:			30%;
+	margin-right:			5%;
+	z-index:				0;
+}
+.lnk1_img{
+	position:				absolute;
+	width:					33.76%;
+	top:					73.60%;
+	left:					12.36%;
+}
+.lnk2_img{
+	position:				absolute;
+	width:					33.76%;
+	top:					73.60%;
+	left:					53.79%;
+}
